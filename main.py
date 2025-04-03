@@ -6,11 +6,11 @@ from product_manager import ProductManager
 
 manager = ProductManager()
 
-product1 = Product("Laptop", 50000, 10)
-product2 = Product("Telefon", 30000, 20)
-product3 = Product("Slušalice", 5000, 50)
-product4 = Product("Televizor", 60000, 5)
-product5 = Product("Racunarski sto", 15000, 15)
+product1 = Product("Smartphone", 40000, 15)
+product2 = Product("Tablet", 25000, 30)     
+product3 = Product("Bežične slušalice", 6000, 40)
+product4 = Product("Pametan TV", 45000, 8)  
+product5 = Product("Gaming računar", 120000, 10)
 
 
 manager.add_product(product1)
@@ -19,5 +19,3 @@ manager.add_product(product3)
 manager.add_product(product4)
 manager.add_product(product5)
 
-manager.display_all_products()
-manager.total_value()
