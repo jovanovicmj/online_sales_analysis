@@ -3,6 +3,8 @@
 
 from product import Product
 from product_manager import ProductManager
+import random
+from cart import Cart
 
 manager = ProductManager()
 
@@ -21,3 +23,18 @@ manager.add_product(product5)
 
 manager.display_all_products()
 manager.total_value()
+
+cart = Cart()
+
+
+random_products = random.sample(manager.products, 3)
+
+
+for product in random_products:
+    quantity = random.randint(1, 3) 
+    cart.add_to_cart(product, quantity)
+
+
+cart.display_cart()
+
+print(f"Ukupna cena korpe za naplatu: {cart.total_price()} RSD")
